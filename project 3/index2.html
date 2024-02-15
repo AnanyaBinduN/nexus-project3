@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techy Software</title>
+  <style>
+    /* CSS for gradient background */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    }
+
+    /* Header styles */
+    header {
+      background: linear-gradient(to right, #4b6cb7, #182848);
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    /* Navigation styles */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Main content styles */
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .banner {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .banner img {
+      max-width: 100%;
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    }
+
+    /* Footer styles */
+    footer {
+      background: linear-gradient(to right, #4b6cb7, #182848);
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Techy Software</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container" id="home">
+    <section class="banner">
+      <h2>Welcome to Techy Software</h2>
+      <!-- Replace the placeholder link with the actual Google Photos link -->
+      <img src="https://th.bing.com/th/id/OIP.Go6iiAOr_5DdQEjz2fYvbQHaHa?rs=1&pid=ImgDetMain" alt="Software Interface">
+	  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.spiceworks.com%2Ftech%2Fartificial-intelligence%2Farticles%2Fwhat-is-general-ai%2F&psig=AOvVaw0semnzWT5V7g8GJjgnzY4Y&ust=1708063551998000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPijvtvWrIQDFQAAAAAdAAAAABAE">
+    </section>
+  </div>
+
+  <div class="container" id="about">
+    <section>
+      <h2>About Us</h2>
+      <p>We are a leading software company specializing in innovative solutions for businesses.</p>
+    </section>
+  </div>
+
+  <div class="container" id="services">
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Custom Software Development</li>
+        <li>Web Application Development</li>
+        <li>Mobile App Development</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="container" id="contact">
+    <section>
+      <h2>Contact Us</h2>
+      <p>Have a project in mind? Let's discuss.</p>
+      <form id="contactForm" action="/submit-contact-form" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container" id="information">
+      <section>
+        <h2>Information Section</h2>
+        <p>Provide your details below to receive updates and offers:</p>
+        <form id="customerForm" action="/submit-customer-details" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <button type="submit">Submit</button>
+        </form>
+        <p id="submissionStatus"></p>
+      </section>
+    </div>
+    <p>Connect with us on social media:</p>
+    <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+    <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
+  </footer>
+
+</body>
+</html>
